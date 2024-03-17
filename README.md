@@ -1,6 +1,10 @@
-# Nixvim template
+# Nixvim
 
-This template gives you a good starting point for configuring nixvim standalone.
+My configuration for nixvim
+
+## TODO
+
+- figure out what is implemented in nixvim to use and what needs to be done with LUA imports.
 
 ## Configuring
 

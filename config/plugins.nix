@@ -44,18 +44,18 @@
     lsp = {
       enable = true;
       servers = {
-        #rust_analyzer = {
-        #  enable = true;
-        #  installRustc = false;
-        #  cargoPackage = false;
-        #  installCargo = false;
+        rust_analyzer = {
+          enable = true;
+          installRustc = false;
+          cargoPackage = false;
+          installCargo = false;
         };
         bashls.enable = true;
         ts_ls.enable = true;
-        #angularls = {
-        #  enable = true;
-        #  package = null;
-        #};
+        angularls = {
+          enable = true;
+          package = null;
+        };
       };
     };
     none-ls = {
@@ -76,5 +76,6 @@
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
     web-devicons.enable = true;
-  }
+};
+}
 

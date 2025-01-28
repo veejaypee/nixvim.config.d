@@ -2,11 +2,12 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   imports = [
     ./telescope.nix
   ];
-  programs.nixvim.plugins = {
+  plugins = {
     which-key.enable = true;
     oil.enable = true;
     cmp-snippy.enable = true;
@@ -43,11 +44,11 @@
     lsp = {
       enable = true;
       servers = {
-        rust_analyzer = {
-          enable = true;
-          installRustc = false;
-          cargoPackage = false;
-          installCargo = false;
+        #rust_analyzer = {
+        #  enable = true;
+        #  installRustc = false;
+        #  cargoPackage = false;
+        #  installCargo = false;
         };
         bashls.enable = true;
         ts_ls.enable = true;
@@ -75,5 +76,5 @@
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
     web-devicons.enable = true;
-  };
-}
+  }
+

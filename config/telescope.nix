@@ -3,7 +3,7 @@
   config,
   ...
 }: {
-  programs.nixvim.plugins.telescope = {
+  plugins.telescope = {
     enable = true;
     extensions.fzf-native.enable = true;
     keymaps = {

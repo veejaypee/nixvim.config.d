@@ -2,10 +2,10 @@
   pkgs,
   config,
   ...
-}:
-{
+}: {
   imports = [
     ./telescope.nix
+    ./copilot.nix
   ];
   plugins = {
     which-key.enable = true;
@@ -76,6 +76,5 @@
     treesitter.enable = true;
     rainbow-delimiters.enable = true;
     web-devicons.enable = true;
-};
+  };
 }
-

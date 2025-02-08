@@ -6,6 +6,7 @@
   imports = [
     ./telescope.nix
     ./copilot.nix
+    ./orgmode.nix
   ];
   plugins = {
     which-key.enable = true;

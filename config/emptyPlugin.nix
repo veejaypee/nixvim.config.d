@@ -3,6 +3,6 @@
   config,
   ...
 }: {
-  programs.nixvim.plugins = {
+  plugins = {
   };
 }

@@ -57,6 +57,7 @@
           enable = true;
           package = null;
         };
+        jsonls.enable = true;
       };
     };
     none-ls = {

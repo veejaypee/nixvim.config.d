@@ -57,7 +57,11 @@
           enable = true;
           package = null;
         };
+        ## vscode-langservers-extracted:
+        eslint.enable = true;
         jsonls.enable = true;
+        html.enable = true;
+        cssls.enable = true;
       };
     };
     none-ls = {

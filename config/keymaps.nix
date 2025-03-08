@@ -10,7 +10,7 @@
         action = "<cmd>oil<cr>";
         key = "-";
         mode = ["n"];
-      };
+      }
       {
         action = "<cmd>Telescope<cr>";
         key = "<leader>f<leader>";

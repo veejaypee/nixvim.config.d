@@ -7,7 +7,7 @@
 
   keymaps = [
     {
-      action = "<cmd>oil<cr>";
+      action = "<cmd>Oil<cr>";
       key = "-";
       mode = ["n"];
     }

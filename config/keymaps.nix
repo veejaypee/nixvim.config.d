@@ -7,10 +7,15 @@
 
     keymaps = [
       {
-        action = "<cmd>Oil<CR>";
+        action = "<cmd>oil<cr>";
         key = "-";
         mode = ["n"];
-      }
+      };
+      {
+        action = "<cmd>Telescope<cr>";
+        key = "<leader>f<leader>";
+        mode = ["n"];
+      };
     ];
 
     plugins = {

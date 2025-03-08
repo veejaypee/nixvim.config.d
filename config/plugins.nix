@@ -7,9 +7,9 @@
     ./telescope.nix
     ./copilot.nix
     ./orgmode.nix
+    ./which-key.nix
   ];
   plugins = {
-    which-key.enable = true;
     oil.enable = true;
     cmp-snippy.enable = true;
     cmp-nvim-lsp.enable = true;

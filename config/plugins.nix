@@ -4,8 +4,9 @@
   ...
 }: {
   imports = [
-    ./telescope.nix
     ./copilot.nix
+    ./gitsigns.nix
+    ./telescope.nix
     ./orgmode.nix
     ./which-key.nix
   ];

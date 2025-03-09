@@ -10,6 +10,8 @@
   opts = {
     number = true;
     relativenumber = true;
+    cursorline = true;
+    cursorlineopt = "both";
   };
   colorschemes.catppuccin = {
     enable = true;

@@ -11,6 +11,7 @@
     ./which-key.nix
   ];
   plugins = {
+    undotree.enable = true;
     oil.enable = true;
     cmp-snippy.enable = true;
     cmp-nvim-lsp.enable = true;
@@ -80,7 +81,10 @@
     lint.enable = true;
     nix.enable = true;
     nvim-autopairs.enable = true;
-    treesitter.enable = true;
+    treesitter = {
+      enable = true;
+      settings.highlight = true;
+    }
     rainbow-delimiters.enable = true;
     web-devicons.enable = true;
   };

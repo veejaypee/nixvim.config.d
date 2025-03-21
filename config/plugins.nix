@@ -83,8 +83,8 @@
     nvim-autopairs.enable = true;
     treesitter = {
       enable = true;
-      settings.highlight = true;
-    }
+      settings.highlight.enable = true;
+    };
     rainbow-delimiters.enable = true;
     web-devicons.enable = true;
   };

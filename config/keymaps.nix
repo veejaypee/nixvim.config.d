@@ -11,6 +11,12 @@
       key = "-";
       mode = ["n"];
     }
+    {
+      action = ":%bd\|e#\|bd#<cr>";
+      key = "<leader>bdo";
+      mode = ["n"];
+      options.desc = "[B]uffer [D]elete [O]thers";
+    }
   ];
 
   plugins = {

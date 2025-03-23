@@ -27,9 +27,12 @@
       }
       {
         type = "padding";
-        val = 2;
+        val = 4;
       }
       {
+        opts = {
+          position = "center";
+        };
         type = "group";
         val = [
           {
@@ -37,20 +40,20 @@
               __raw = "function() vim.cmd[[ene]] end";
             };
             opts = {
-              shortcut = "n";
+              position = "center";
             };
             type = "button";
-            val = "  New file";
+            val = "   New file";
           }
           {
             on_press = {
               __raw = "function() vim.cmd[[qa]] end";
             };
             opts = {
-              shortcut = "q";
+              position = "center";
             };
             type = "button";
-            val = " Quit Neovim";
+            val = "  Quit Neovim";
           }
         ];
       }

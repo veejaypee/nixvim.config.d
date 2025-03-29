@@ -10,6 +10,7 @@
       action = "<cmd>Oil<cr>";
       key = "-";
       mode = ["n"];
+      options.desc = "Open File[-]Browser";
     }
     {
       action = ":%bd\|e#\|bd#<cr>";
@@ -97,7 +98,7 @@
           action = "signature_help";
           desc = "Signature help";
         };
-        "<leader>carn" = {
+        "<F2>" = {
           action = "rename";
           desc = "Rename variable";
         };

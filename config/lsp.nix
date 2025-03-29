@@ -45,5 +45,14 @@
       settings.highlight.enable = true;
     };
     rainbow-delimiters.enable = true;
+    trouble = {
+      enable = true;
+      settings.modes = {
+        diagnostics = {
+          auto_open = true;
+          auto_close = true;
+        };
+      };
+    };
   };
 }

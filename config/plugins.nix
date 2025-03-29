@@ -14,7 +14,7 @@
     ./which-key.nix
   ];
   plugins = {
-    auto-save.enable = true;
+    auto-save.enable = false;
     auto-session.enable = true;
     mini = {
       enable = true;

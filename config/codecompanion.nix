@@ -5,7 +5,7 @@
 }: {
   plugins = {
     codecompanion = {
-      enable;
-    }
+      enable = true;
+    };
   };
 }

@@ -6,7 +6,7 @@
   imports = [
     ./alpha.nix
     ./cmp.nix
-    ./copilot.nix
+    ./codecompanion.nix
     ./gitsigns.nix
     ./lsp.nix
     ./orgmode.nix

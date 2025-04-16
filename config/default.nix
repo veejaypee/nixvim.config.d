@@ -23,6 +23,9 @@
     relativenumber = true;
     shiftround = true;
     shiftwidth = 2;
+    tabstop = 2;
+    softtabstop = 0;
+    expandtab = true;
     cursorline = true;
     cursorlineopt = "both";
   };

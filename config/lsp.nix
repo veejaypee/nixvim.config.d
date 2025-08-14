@@ -7,12 +7,12 @@
     lsp = {
       enable = true;
       servers = {
-        rust_analyzer = {
-          enable = true;
-          installRustc = false;
-          cargoPackage = false;
-          installCargo = false;
-        };
+        # rust_analyzer = {
+        #   enable = true;
+        #   installRustc = false;
+        #   cargoPackage = false;
+        #   installCargo = false;
+        # };
         bashls.enable = true;
         ts_ls.enable = true;
         angularls = {

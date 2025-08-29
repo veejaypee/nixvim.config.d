@@ -25,5 +25,6 @@
     undotree.enable = true;
     oil.enable = true;
     web-devicons.enable = true;
+    tmux-navigator.enable = true;
   };
 }

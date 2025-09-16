@@ -42,10 +42,11 @@
     treesitter = {
       enable = true;
       settings.highlight.enable = true;
+      settings.ensure_installed = "all";
     };
     rainbow-delimiters.enable = true;
     trouble = {
-      enable = true;
+      enable = false;
       settings.modes = {
         diagnostics = {
           auto_open = true;

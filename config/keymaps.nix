@@ -78,6 +78,10 @@
           action = "hover";
           desc = "Hover";
         };
+        ga = {
+          action = "code_action";
+          desc = "Go do code action";
+        };
         gr = {
           action = "references";
           desc = "Goto references";

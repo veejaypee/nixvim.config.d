@@ -28,7 +28,9 @@
     none-ls = {
       enable = true;
       enableLspFormat = true;
-      sources.formatting.alejandra.enable = true;
+      sources.formatting = {
+        alejandra.enable = true;
+      };
     };
     lsp-format.enable = true;
     lsp-lines.enable = true;

@@ -42,7 +42,6 @@
     treesitter = {
       enable = true;
       settings.highlight.enable = true;
-      settings.ensure_installed = "all";
     };
     rainbow-delimiters.enable = true;
     trouble = {

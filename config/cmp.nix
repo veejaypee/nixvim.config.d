@@ -15,9 +15,10 @@
           {name = "nvim_lsp_document_symbol";}
           {name = "nvim_lsp_signature_help";}
           {name = "buffer";}
-          {name = "cmdline";}
           {name = "path";}
           {name = "treesitter";}
+          {name = "conventionalcommits";}
+          {name = "cmdline";}
         ];
         mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
@@ -26,14 +27,5 @@
         };
       };
     };
-    cmp-buffer.enable = true;
-    cmp-cmdline.enable = true;
-    cmp-conventionalcommits.enable = true;
-    cmp-nvim-lsp.enable = true;
-    cmp-nvim-lsp-document-symbol.enable = true;
-    cmp-nvim-lsp-signature-help.enable = true;
-    cmp-snippy.enable = true;
-    cmp-path.enable = true;
-    cmp-treesitter.enable = true;
   };
 }

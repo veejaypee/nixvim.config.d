@@ -43,6 +43,7 @@
     nix.enable = true;
     treesitter = {
       enable = true;
+      settings.auto_install = true;
       settings.highlight.enable = true;
     };
     rainbow-delimiters.enable = true;

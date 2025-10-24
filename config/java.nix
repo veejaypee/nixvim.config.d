@@ -4,8 +4,13 @@
   ...
 }: {
   plugins = {
-    java = {
+    dap.enable = true;
+    jdtls = {
       enable = true;
+      settings = {
+      };
     };
+  };
+  keymapsOnEvents = {
   };
 }

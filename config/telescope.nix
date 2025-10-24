@@ -11,7 +11,11 @@
     };
     settings = {
       defaults = {
-        path_display = "smart";
+        path_display = {
+          filename_first = {
+            reverse_directories = true;
+          };
+        };
       };
     };
   };

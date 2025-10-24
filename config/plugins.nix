@@ -8,6 +8,7 @@
     ./cmp.nix
     ./codecompanion.nix
     ./gitsigns.nix
+    ./java.nix
     ./lsp.nix
     ./orgmode.nix
     ./telescope.nix

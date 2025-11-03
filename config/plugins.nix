@@ -10,8 +10,10 @@
     ./gitsigns.nix
     ./java.nix
     ./lsp.nix
+    ./opencode.nix
     ./orgmode.nix
     ./telescope.nix
+    ./snacks.nix
     ./which-key.nix
   ];
   plugins = {

@@ -22,6 +22,16 @@
 
   plugins = {
     telescope.keymaps = {
+      "<leader>sd" = {
+        mode = "n";
+        action = "diagnostics";
+        options.desc = "[S]earch [D]iagnostics";
+      };
+      "<leader>sr" = {
+        mode = "n";
+        action = "diagnostics";
+        options.desc = "[S]earch [R]esume";
+      };
       "<leader>sh" = {
         mode = "n";
         action = "help_tags";
@@ -47,7 +57,7 @@
         action = "treesitter";
         options.desc = "[S]earch [T]reesitter";
       };
-      "<leader>s" = {
+      "<leader>s." = {
         mode = "n";
         action = "oldfiles";
         options.desc = "[S]earch recent files ('.' for repeat)";
@@ -56,6 +66,18 @@
         action = "buffers";
         options.desc = "[ ] Search list of existing buffers";
       };
+      # "<leader>s/" = {
+      #   mode = "n";
+      #   action.__raw = ''
+      #         function()
+      #       builtin.live_grep {
+      #         grep_open_files = true,
+      #         prompt_title = 'Live Grep in Open Files',
+      #       }
+      #     end,
+      #   '';
+      #   options.desc = "[S]earch [/] in Open files";
+      # };
     };
     lsp.keymaps = {
       diagnostic = {

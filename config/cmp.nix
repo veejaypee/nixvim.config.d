@@ -4,6 +4,7 @@
   ...
 }: {
   plugins = {
+    blink-cmp.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = true;

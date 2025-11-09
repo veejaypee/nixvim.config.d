@@ -30,5 +30,6 @@
     web-devicons.enable = true;
     tmux-navigator.enable = true;
     markdown-preview.enable = true;
+    fidget.enable = true;
   };
 }

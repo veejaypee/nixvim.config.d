@@ -16,7 +16,6 @@
         ts_ls.enable = true;
         angularls = {
           enable = true;
-          package = null;
         };
         ## vscode-langservers-extracted:
         eslint.enable = true;

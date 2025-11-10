@@ -28,7 +28,7 @@
         enable = true;
         config.completion.callSnippet = "Replace";
       };
-      nil_ls.enable = true;
+      # nil_ls.enable = true;
     };
     keymaps = [
       {
@@ -107,13 +107,13 @@
         ];
       };
     };
-    none-ls = {
-      enable = true;
-      enableLspFormat = true;
-      sources.formatting = {
-        alejandra.enable = true;
-      };
-    };
+    # none-ls = {
+    #   enable = true;
+    #   enableLspFormat = true;
+    #   sources.formatting = {
+    #     alejandra.enable = true;
+    #   };
+    # };
     lsp-format.enable = true;
     lsp-lines.enable = true;
     lsp-status.enable = true;

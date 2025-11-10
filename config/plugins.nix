@@ -2,16 +2,17 @@
   pkgs,
   config,
   ...
-}: {
+}:
+{
   imports = [
     # ./alpha.nix
     ./cmp.nix
     ./codecompanion.nix
     ./gitsigns.nix
-    ./java.nix
+    # ./java.nix
     ./lsp.nix
     ./opencode.nix
-    ./orgmode.nix
+    # ./orgmode.nix
     ./telescope.nix
     ./snacks.nix
     ./which-key.nix

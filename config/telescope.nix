@@ -21,8 +21,8 @@
     };
     keymaps = {
       "<leader>sd" = {
-        mode = "n";
         action = "diagnostics";
+        mode = "n";
         options.desc = "[S]earch [D]iagnostics";
       };
       "<leader>sr" = {
@@ -34,6 +34,11 @@
         mode = "n";
         action = "help_tags";
         options.desc = "[S]earch [H]elp";
+      };
+      "<leader>sk" = {
+        mode = "n";
+        action = "keymaps";
+        options.desc = "[S]earch [K]eymaps";
       };
       "<leader>ss" = {
         action = "builtin";

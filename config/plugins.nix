@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./alpha.nix
+    # ./alpha.nix
     ./cmp.nix
     ./codecompanion.nix
     ./gitsigns.nix

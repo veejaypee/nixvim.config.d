@@ -93,18 +93,32 @@
         action = "buffers";
         options.desc = "[ ] Search list of existing buffers";
       };
-      # "<leader>s/" = {
-      #   mode = "n";
-      #   action.__raw = ''
-      #         function()
-      #       builtin.live_grep {
-      #         grep_open_files = true,
-      #         prompt_title = 'Live Grep in Open Files',
-      #       }
-      #     end,
-      #   '';
-      #   options.desc = "[S]earch [/] in Open files";
-      # };
+      "<leader>/" = {
+        mode = "n";
+        action = ''
+          function()
+              require('telescope.builtin').current_buffer_fuzzy_find(
+                require('telescope.themes').get_dropdown {
+                  winblend = 10,
+                  previewer = false
+                }
+              )
+              end
+        '';
+        options.desc = "[/] Fuzzily search in current buffer";
+      };
+      "<leader>s/" = {
+        mode = "n";
+        action = ''
+          function()
+              require('telescope.builtin').live_grep {
+                grep_open_files = true,
+                prompt_title = 'Live Grep in Open Files'
+              }
+              end
+        '';
+        options.desc = "[S]earch [/] in Open Files";
+      };
     };
     lsp.keymaps = {
       diagnostic = {

@@ -2,7 +2,9 @@
   pkgs,
   config,
   ...
-}: {
+}: let
+  enable_nerd_fonts = true;
+in {
   imports = [
     ./autocommand.nix
     ./keymaps.nix

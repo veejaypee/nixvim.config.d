@@ -3,7 +3,24 @@
   config,
   ...
 }: {
+  autoGroups = {
+    "kickstart-lsp-attach" = {
+      clear = true;
+    };
+  };
   plugins = {
+    fidget.enable = true;
+    lazydev = {
+      enable = true;
+      settings = {
+        library = [
+          {
+            path = "\${3rd}/luv/library";
+            words = ["vim%.uv"];
+          }
+        ];
+      };
+    };
     lsp = {
       enable = true;
       servers = {
@@ -22,7 +39,11 @@
         jsonls.enable = true;
         html.enable = true;
         cssls.enable = true;
-        lua_ls.enable = true;
+        lua_ls = {
+          enable = true;
+          settings.completion.callSnippet = "Replace";
+        };
+        nil_ls.enable = true;
       };
     };
     none-ls = {

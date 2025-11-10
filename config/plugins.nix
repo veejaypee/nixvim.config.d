@@ -19,10 +19,6 @@
   plugins = {
     auto-save.enable = false;
     auto-session.enable = true;
-    mini = {
-      enable = true;
-      modules.icons.style = "glyph";
-    };
     nvim-autopairs.enable = true;
     lualine.enable = true;
     undotree.enable = true;
@@ -30,6 +26,11 @@
     web-devicons.enable = true;
     tmux-navigator.enable = true;
     markdown-preview.enable = true;
-    fidget.enable = true;
+    guess-indent.enable = true;
+    indent-blankline.enable = true;
+    todo-comments = {
+      enable = true;
+      settings.signs = true;
+    };
   };
 }

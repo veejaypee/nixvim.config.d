@@ -4,6 +4,7 @@
   ...
 }: {
   imports = [
+    ./autocommand.nix
     ./keymaps.nix
     ./plugins.nix
   ];

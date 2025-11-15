@@ -18,6 +18,8 @@
         };
       };
       extensions.__raw = "{ ['ui-select'] = { require('telescope.themes').get_dropdown() } }";
+      # mappings = {
+      # }
     };
     keymaps = {
       "<leader>sd" = {
@@ -69,36 +71,20 @@
         action = "buffers";
         options.desc = "[ ] Search list of existing buffers";
       };
+      "<leader>/" = {
+        mode = "n";
+        action = "current_buffer_fuzzy_find";
+        options.desc = "[/] Fuzzily search in current buffer";
+      };
+      # "<leader>s/" = {
+      # mode = "n";
+      # action = "live_grep";
+      # options = {
+      #   grep_open_files = true;
+      #   prompt_title = "Live Grep in Open Files";
+      #   desc = "[S]earch [/] in Open Files";
+      #   };
+      # };
     };
-    # keymaps = [
-    #   {
-    #     key = "<leader>/";
-    #     mode = "n";
-    #     action.__raw = ''
-    #       function()
-    #           require('telescope.builtin').current_buffer_fuzzy_find(
-    #             require('telescope.themes').get_dropdown {
-    #               winblend = 10,
-    #               previewer = false
-    #             }
-    #           )
-    #           end
-    #     '';
-    #     options.desc = "[/] Fuzzily search in current buffer";
-    #   }
-    # {
-    #   key = "<leader>s/";
-    #   mode = "n";
-    #   action.__raw = ''
-    #     function()
-    #         require('telescope.builtin').live_grep {
-    #           grep_open_files = true,
-    #           prompt_title = 'Live Grep in Open Files'
-    #         }
-    #         end
-    #   '';
-    #   options.desc = "[S]earch [/] in Open Files";
-    # }
-    # ];
   };
 }

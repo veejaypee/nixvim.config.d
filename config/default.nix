@@ -18,8 +18,8 @@ in {
   };
 
   clipboard = {
-    register = "unnamedplus";
-    providers.wl-copy.enable = true;
+    # register = "unnamedplus";
+    # providers.wl-copy.enable = true;
   };
 
   opts = {

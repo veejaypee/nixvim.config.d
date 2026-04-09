@@ -6,7 +6,7 @@
   enable_nerd_fonts = true;
 in {
   imports = [
-    ./autocommand.nix
+    # ./autocommand.nix
     ./keymaps.nix
     ./plugins.nix
   ];

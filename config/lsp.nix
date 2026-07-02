@@ -4,11 +4,10 @@
   ...
 }:
 {
-  autoGroups = {
-    "kickstart-lsp-attach" = {
-      clear = true;
-    };
-  };
+  # autoGroups = { "kickstart-lsp-attach" = {
+  #     clear = true;
+  #   };
+  # };
   lsp = {
     servers = {
       rust_analyzer = {
@@ -26,7 +25,7 @@
       cssls.enable = true;
       lua_ls = {
         enable = true;
-        config.completion.callSnippet = "Replace";
+        # config.completion.callSnippet = "Replace";
       };
       # nil_ls.enable = true;
     };
@@ -119,7 +118,7 @@
     lsp-status.enable = true;
     lspkind = {
       enable = true;
-      cmp.enable = true;
+      # cmp.enable = true;
     };
     lint.enable = true;
     nix.enable = true;

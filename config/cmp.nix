@@ -4,7 +4,7 @@
   ...
 }: {
   plugins = {
-    blink-cmp.enable = true;
+    # blink-cmp.enable = true;
     cmp = {
       enable = true;
       autoEnableSources = true;
@@ -22,11 +22,34 @@
           {name = "cmdline";}
         ];
         mapping = {
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<CR>" = "cmp.mapping.confirm({ select = false })";
           "<Tab>" = "cmp.mapping.select_next_item()";
           "<S-Tab>" = "cmp.mapping.select_prev_item()";
+          "<C-Space>" = "cmp.mapping.complete()";
         };
         preselect = "none";
+        window = {
+          completion.border = [
+            "┌"
+            "─"
+            "┐"
+            "│"
+            "┘"
+            "─"
+            "└"
+            "│"
+          ];
+          documentation.border = [
+            "┌"
+            "─"
+            "┐"
+            "│"
+            "┘"
+            "─"
+            "└"
+            "│"
+          ];
+        };
       };
     };
   };

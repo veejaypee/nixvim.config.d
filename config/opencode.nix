@@ -4,9 +4,9 @@
   ...
 }: {
   plugins = {
-    opencode = {
-      enable = true;
-      # settings = {};
-    };
+    # opencode = {
+    #   enable = true;
+    #   # settings = {};
+    # };
   };
 }
